@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>MyWeb</title>
+            <link rel="stylesheet" href="MyWeb.css">
+        </head>
+        <body>
+                 <section>
+                    <div id="title">
+                        <strong>
+                            hi
+                            <span id="dot">.</span>
+                            ru
+                        </strong>
+                    </div>
+                    <nav id="search">
+                        <div class="search-container">
+                            <form action="/action_page.php">
+                              <input type="text" placeholder="Search" name="search">
+                              <button type="submit"><img src="D:\html\web.me\site\search.png" width="15px">
+                                <i class="fa fa-search"></i></button>
+                            </form>
+                          </div>
+                    </nav>
+                    <div id="dv-li">
+                        <ul id="list">
+                            <nav id="nav" >
+                            <li class="img"><img src="D:\html\web.me\site\home.png" style="width: 30px;"><strong class="text-padding">Home</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\envelope.png"style="width: 30px;"><strong class="text-padding">Envelope</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\truck-side.png"style="width: 30px;"><strong class="text-padding">Truck-Side</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\shopping-cart.png"style="width: 30px;"><strong class="text-padding">Shopping-Cart</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\search.png"style="width: 30px;"><strong class="text-padding">Search</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\world.png"style="width: 30px;"><strong class="text-padding">World</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\credit-card.png"style="width: 30px;"><strong class="text-padding">Card</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\calendar.png"style="width: 30px;"><strong class="text-padding">Calendar</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\bell.png"style="width: 30px;"><strong class="text-padding">Bell</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\bank.png"style="width: 30px;"><strong class="text-padding">Bank</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\portrait.png"style="width: 30px;"><strong class="text-padding">Portrait</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\user.png"style="width: 30px;"><strong class="text-padding">User</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\settings.png"style="width: 30px;"><strong class="text-padding">Setting</strong></li><br>
+                            <li class="img"><img src="D:\html\web.me\site\cross.png"style="width: 30px;"><strong class="text-padding">Close</strong></li><br>
+                            </nav>
+                        </ul>
+                    </div>
+                    
+                       
+
+                        <section>
+                           <nav id="img-nav">
+                            <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div class="numbertext">1/3</div>
+                                <img src="D:\html\web.me\site\naruto.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">2/3</div>
+                                <img src="D:\html\web.me\site\naruto0.jpg" style="width:100%">                                
+                            </div>                            
+                            <div class="mySlides fade">
+                                <div class="numbertext">3/3</div>
+                                <img src="D:\html\web.me\site\naruto1.png" style="width:100%">
+                            </div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span> 
+                                <span class="dot" onclick="currentSlide(3)"></span> 
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                            </div>                           
+                            
+                            
+                            
+                            </nav>  
+                            <script>
+                                let slideIndex = 1;
+                                showSlides(slideIndex);
+                                
+                                function plusSlides(n) {
+                                showSlides(slideIndex += n);
+                                }
+                                
+                                function currentSlide(n) {
+                                showSlides(slideIndex = n);
+                                }
+                                
+                                function showSlides(n) {
+                                let i;
+                                let slides = document.getElementsByClassName("mySlides");
+                                let dots = document.getElementsByClassName("dot");
+                                if (n > slides.length) {slideIndex = 1}    
+                                if (n < 1) {slideIndex = slides.length}
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";  
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";  
+                                dots[slideIndex-1].className += " active";
+                                }
+                                </script>
+                                </section>
+                                </br>
+                                <nav class="small-img">
+                                    <div>
+                                        <img src="D:\html\web.me\site\demon.png" width="450px">
+                                    </div>
+                                    <div id="story">
+                                       <strong>
+                                        <p>Tanjiro sets out to become a demon slayer to avenge
+                                             his family and cure his sister. 
+                                            A family is attacked by demons and only two members 
+                                            survive - Tanjiro and his sister Nezuko,
+                                             who is turning into a demon slowly. 
+                                             Tanjiro sets out to become a demon slayer to 
+                                             avenge his family and cure his sister.</p></strong>
+                                    </div>
+                                </nav>
+                               
+                                 <article class="small-img-2">
+                                    <div class="img">
+                                        <img src="D:\html\web.me\site\attack.jpg" width="450px" alt="1px">
+                                    </div>
+                                    <div class="story">
+                                        <strong>
+                                        <p>It is set in a world where humanity is forced to live in cities surrounded 
+                                        by three enormous walls that protect them from gigantic
+                                     man-eating humanoids referred to as Titans; the story follows Eren Yeager, 
+                                     who vows to exterminate the Titans after they bring 
+                                     about the destruction of his hometown and the death of his</p></strong>
+                                    </div>
+                                </artical>
+                 </section>
+                 <nav id="all">
+                    <div id="navl">
+                        <strong>
+                            <p>
+                                Tanjiro sets out to become a demon slayer to avenge
+                                his family and cure his sister. 
+                                A family is attacked by demons and only two members 
+                                survive - Tanjiro and his sister Nezuko,
+                                who is turning into a demon slowly. 
+                                Tanjiro sets out to become a demon slayer to 
+                                avenge his family and cure his sister.
+                            </p>    
+                            </strong>
+                          
+                        </div>
+                
+                        <div id="navv">
+                        <img src="D:\html\web.me\site\naruto.jpg" width="450px" alt="1px">
+                        </div>
+                        <div id="navt">
+                            <ul class="List">      
+                                <h3>
+                                <li>Name:Huseyin</li>
+                                <li>Last Name:Shahror</li>
+                                <li>Age:19</li>
+                                <li>Gender:Male</p></li>
+                                </h3>
+                            </ul>
+                            </div>
+                        </nav>
+        </body>
+    </html>
