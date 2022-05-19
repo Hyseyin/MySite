@@ -1,0 +1,186 @@
+body{
+    background-color:white;
+}
+#title{
+    color: rgb(23, 72, 177);
+    margin-left: 3%;
+    font-size: 35pt;
+    font-style:inherit;
+    display: block;
+}
+#dot{
+    color:rgb(255, 145, 0);
+}
+#list{
+    list-style:none;
+    margin-left: 1%;
+    display:block;
+}
+.img{
+    margin-top: 5px;
+    display: block;
+}
+.text-padding{
+    padding-left: 10px;
+    margin-bottom: 1%;
+}
+#dv-li{
+    display: block;
+}
+#nav{
+    float: left; width: 150px;
+    text-align: left;
+    height:750px; /*  navحجم ال */
+    background: #ccc; padding: 20px;
+}
+#img-nav{
+    float: center; 
+    text-align: left;
+    padding: 5px;    
+    background: #ffffff;
+}
+#search{
+    float: center;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+#story{
+    text-align:left;
+    float: right;
+    font-size: 16pt;
+    font-style: normal;
+    width: 500px;
+}
+.small-img{
+    margin-right: 15%;
+    padding: 5px;
+    width: 500px;
+    background: #717171;
+    float: right;
+}
+.small-img-2{
+    margin-right: 10%;
+    float: right;
+    padding: 5px;
+    width: 500px;
+    background: #717171;
+}
+.story{
+  float: right;
+  text-align:left;
+  font-size: 16pt;
+  font-style: normal;
+  width: 500px;   
+}
+#navv{
+  float: left; 
+  text-align: right;
+  padding: 10px;
+  margin-left: 10px;    
+  height: 300px; width: 25%;
+  display: block;
+  background: rgb(255, 255, 255);
+  margin-top: 3px;
+}
+#navl{
+  float: right;
+  text-align: left;
+  height: 300px; width:20%;
+  padding: 10px;
+  margin-right: 490px;
+  background: rgb(255, 255, 255);
+  margin-top: 3px;
+  font-size: 17pt;
+}
+.List{
+  list-style:unset;
+}
+#navt{
+  float: left;
+  text-align: left;
+  height: 300px; width:20%; /*حجم navال*/
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  margin-top: 3px;
+  font-size: 17pt;
+}
+#all{
+  margin-left: 15%;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+/* حاوية عرض الشرائح */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: block;
+}
+/* الأزرار التالية والسابقة */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* ضع "زر التالي" على اليمين */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*عند التمرير ، أضف لون خلفية أسود مع القليل من الشفافية */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* نص رقمي (1/3 إلخ) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* النقاط / الرصاص / المؤشرات */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* تلاشي الرسوم المتحركة */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*على الشاشات الأصغر ، قلل حجم النص */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
